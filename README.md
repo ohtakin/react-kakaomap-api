@@ -2,6 +2,18 @@
 
 '.env.development', '.env.production' 파일에 REACT_APP_KAKAO_API_KEY=apikey 추가 필요합니다.
 
+## - import
+
+    import KakaoMap, {
+      withJs,
+      withKakaoMap,
+      Marker,
+      MarkerClusterer,
+      InfoWindoWithMarker,
+      CustomOverlay,
+      Polyline
+    } from "react-kakaomap-api";
+
 ## - KakaoMap
 
 KakaoMap 사용 시 props에 options 적용
@@ -18,9 +30,6 @@ KakaoMap 사용 시 props에 options 적용
     }
 
 ### App.js
-
-    import { withJs, withKakaoMap } from "./components";
-    import KakaoMap from "./components/kakaomap";
 
     const Kakao = withJs(
       `//dapi.kakao.com/v2/maps/sdk.js?appkey=${
