@@ -4,7 +4,8 @@
 
 ## - import
 
-    import KakaoMap, {
+    import MapContext, {
+      KakaoMap,
       withJs,
       withKakaoMap,
       Marker,
