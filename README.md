@@ -2,9 +2,18 @@
 
 '.env.development', '.env.production' 파일에 REACT_APP_KAKAO_API_KEY=apikey 추가 필요합니다.
 
+## - MapContext
+
 KakaoMap의 child 일경우 MapContext 사용 가능합니다.
 
-    import MapContext from "react-kakaomap-api";
+    const CustomComponent = props => {
+      const { kakao, map } = useContext(MapContext);
+      return null;
+    };
+
+    <Kakao>
+      <CustomComponent />
+    </Kakao>
 
 ## - import
 
