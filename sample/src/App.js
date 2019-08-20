@@ -20,7 +20,6 @@ const Kakao = withJs(
 
 function App() {
   const gps = { lat: 37.54074492224992, lng: 126.96414483172607 };
-  console.log("Kakao: ", Kakao);
   const bounds = [];
   const Markers = vehicles.map(({ lat, lng, plateNumber }, index) => {
     bounds.push({ lat, lng });
