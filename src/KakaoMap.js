@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from "react";
+import { FullScreen } from "./fullscreen";
 import Wrapper from "./Wrapper";
 
 export const MapContext = React.createContext({});
@@ -63,6 +64,7 @@ const KakaoMap = props => {
 
   return (
     <Wrapper id="map-canvas">
+      <FullScreen id="full-screen" canvas="map-canvas" />
       <Wrapper id="kakao-map" ref={handleLoaded}>
         {state.map === null ? null : (
           <MapContext.Provider value={state}>
