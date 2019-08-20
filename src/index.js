@@ -1,4 +1,4 @@
-import MapContext from "./KakaoMap";
+import { MapContext } from "./KakaoMap";
 export default MapContext;
 export { default as KakaoMap } from "./KakaoMap";
 export { default as withJs } from "./withJs";
