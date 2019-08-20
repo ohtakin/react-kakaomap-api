@@ -1,4 +1,6 @@
-export { default as KakaoMap } from "./KakaoMap";
+import KakaoMap from "./KakaoMap";
+export default KakaoMap;
+export { default as MapContext } from "./KakaoMap";
 export { default as withJs } from "./withJs";
 export { default as withKakaoMap } from "./withKakaoMap";
 export { default as Marker } from "./Marker";

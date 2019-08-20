@@ -59,6 +59,9 @@ const KakaoMap = props => {
     kakao.maps.event.addListener(map, "zoom_changed", zoomChange);
 
     setState({ map, kakao });
+    return () => {
+      kakao.maps.event.removeListener(marker, "zoom_changed", zoomChange);
+    };
   }, []);
 
   return (
