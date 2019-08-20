@@ -1,6 +1,6 @@
 {
   "name": "react-kakaomap-api",
-  "version": "0.1.18",
+  "version": "0.1.19",
   "description": "kakao map",
   "main": "dist/index.js",
   "scripts": {
