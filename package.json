@@ -1,6 +1,6 @@
 {
   "name": "react-kakaomap-api",
-  "version": "1.0.3",
+  "version": "0.1.11",
   "description": "kakao map",
   "main": "dist/index.js",
   "scripts": {
@@ -9,6 +9,11 @@
   },
   "files": [
     "dist/*"
+  ],
+  "keywords": [
+    "react",
+    "kakao",
+    "map"
   ],
   "repository": {
     "type": "git",
